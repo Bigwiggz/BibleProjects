@@ -1,0 +1,8 @@
+/*
+Style sheet for Leaflet template
+*/
+
+#map {
+  height: 100vh;
+  width: 100%;
+}

@@ -1,0 +1,25 @@
+
+/*Vis JS Timeline Styles*/
+
+/*On Hover Color change for Vis JS Timeline*/
+.default {
+  background-color: lightblue;
+}
+
+.hovered {
+  background-color: orange !important;
+  font-weight: bold;
+}
+
+/*BUTTON TOGGLE*/
+.toggled {
+  background-color: red;
+  color: white;
+}
+
+/*Vis JS Timeline Item Styles*/
+.vis-item.red {
+    color: white;
+    background-color: red;
+    border-color: darkred;
+  }

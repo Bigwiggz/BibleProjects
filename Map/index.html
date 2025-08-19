@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--BaseStylesheet-->
+	<link rel="stylesheet" type="text/css" href="./css/leafletStyle.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Leaflet CSS-->
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <!--Leaflet Geoman Drawing Library CSS-->
+   <link rel="stylesheet" href="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.css" />  
+   <!--Icon-->
+   <link rel="icon" type="image/svg+xml" href="./img/faviconWorld.svg">
+    <title>Bible Map</title>
+  </head>
+  <body>
+	<h3 class="text-center">Leaflet Map</h3>
+	<div class="container-fluid p-3 text-center">
+		<div class="m-6">
+			<button type="button" class="btn btn-primary" id="goToMapTopButton">Go to Map</button>
+		</div>
+	</div>
+	<div id="map"></div>
+  <!-- ...Object Information From Map... -->
+  <div id="objectInfoCard" class="container" style="display:none; margin-top:20px;">
+    <div class="card">
+      <div class="card-header">
+        <strong>Map Object Information</strong>
+        <button type="button" class="close" aria-label="Close" id="closeObjectInfoCard" style="float:right;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="card-body" id="objectInfoCardBody">
+        <!-- Properties will be injected here -->
+      </div>
+    </div>
+  </div>
+
+	<!-- Geometry Attribute Modal -->
+<div class="modal fade" id="geometryAttributeModal" tabindex="-1" role="dialog" aria-labelledby="geometryAttributeModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <form id="geometryAttributeForm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="geometryAttributeModalLabel">Add Geometry Attributes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Common fields -->
+          <div class="form-group">
+            <label for="geometryName">Name</label>
+            <input type="text" class="form-control" id="geometryName" name="geometryName" required>
+          </div>
+          <div class="form-group">
+            <label for="geometryWebLink">Web Link</label>
+            <input type="text" class="form-control" id="geometryWebLink" name="geometryWebLink" required>
+          </div>
+          <!--Selectable Fields/Groupings-->
+          <div class="form-group">
+              <label for="period-select" class="form-label">Select Time Period:</label>
+              <select id="period-select" class="form-select">
+                  <!--Load period options dynamically-->
+              </select>
+          </div>
+          <div class="form-group">
+              <label for="objectType-select" class="form-label">Select Object Type (i.e. Battle, Prophet...):</label>
+              <select id="objectType-select" class="form-select">
+                  <!--Load meter options dynamically-->
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="geometryColor">Color</label>
+            <input type="color" class="form-control" id="geometryColor" name="geometryColor" required>
+          </div>
+          <div class="form-group">
+            <label for="scriptureReference">Scripture Reference</label>
+            <input type="text" class="form-control" id="scriptureReference" name="scriptureReference" required>
+          </div>
+          <div class="form-group">
+            <label for="geometryDescription">Description</label>
+            <input type="text" class="form-control" id="geometryDescription" name="geometryDescription" required>
+          </div>
+          <!-- Point fields -->
+          <div id="pointFields" style="display:none;">
+            <div class="form-group">
+              <label for="latitude">Latitude</label>
+              <input type="text" class="form-control" id="latitude" name="latitude" readonly>
+            </div>
+            <div class="form-group">
+              <label for="longitude">Longitude</label>
+              <input type="text" class="form-control" id="longitude" name="longitude" readonly>
+            </div>
+            <div class="form-group">
+              <label for="elevation">Elevation</label>
+              <input type="text" class="form-control" id="elevation" name="elevation" readonly>
+          </div>
+          </div>
+          <!-- LineString fields -->
+          <div id="lineFields" style="display:none;">
+            <div class="form-group">
+              <label for="lineLength">Length (miles)</label>
+              <input type="text" class="form-control" id="lineLength" name="lineLength" readonly>
+            </div>
+            <div class="form-group">
+              <label for="numPoints">Number of Points</label>
+              <input type="text" class="form-control" id="numPoints" name="numPoints" readonly>
+            </div>
+          </div>
+          <!-- Polygon fields -->
+          <div id="polygonFields" style="display:none;">
+            <div class="form-group">
+              <label for="perimeter">Perimeter (miles)</label>
+              <input type="text" class="form-control" id="perimeter" name="perimeter" readonly>
+            </div>
+            <div class="form-group">
+              <label for="area">Area (sq miles)</label>
+              <input type="text" class="form-control" id="area" name="area" readonly>
+            </div>
+          </div>
+          <!-- Hidden GUID -->
+          <input type="hidden" id="objectId" name="objectId">
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Save Attributes</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Save to GeoJSON Button -->
+<div class="container-fluid p-3 text-center">
+  <button type="button" class="btn btn-success" id="saveGeoJsonBtn">Save All to GeoJSON</button>
+</div>
+		<br>
+
+		<div class="container-fluid p-3 text-center">
+			<div class="m-6">
+				<button type="button" class="btn btn-primary" id="goToMapBottomButton">Go to Map</button>
+		</div>
+	
+	<!--Footer-->
+	<footer class="container-fluid bg-4 text-center">
+		<a href="https://wol.jw.org" target="_blank">
+		<img src="./img/UofSCgarnetLogo.svg" class="footer-logo" alt="https://jw.org" target="_blank"/>
+		</a>
+		<p>By USC Energy Management<a href="https://jw.org" target="_blank">   Facilities Homepage</a></p>
+		<p>© Copyright 2025. All Rights Reserved</p>
+	</footer>
+  
+    <!-- Leaflet JavaScript Package -->
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+  <!--Load Data Selections-->
+  <script src="./js/ConfigurationFiles/SelectableObjectsList.js"></script>
+  <!--Load Raw Data-->
+  <script src="./js/Data/geoJsonData.js"></script>
+	<!--TurfJS for calculating geometries-->
+	<script src="https://cdn.jsdelivr.net/npm/@turf/turf@7.2.0/turf.min.js"></script>
+	<!--Leaflet Provider Tiles-->
+	<script src="http://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+	<!--Leaflet Drawing Library Geoman js (Must be included right after leaflet-->
+	<script src="https://unpkg.com/@geoman-io/leaflet-geoman-free@latest/dist/leaflet-geoman.min.js"></script> 	
+	<!--Leaflet JavaSript File-->
+	<script src="./js/leaflet.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
