@@ -47,3 +47,28 @@ let volumeDryMeasuresArray=[
     {no:5,name:"Ephah",abbreviation:"e",value:22,liters:22,commonUnit:"liter"},
     {no:6,name:"Homer",abbreviation:"ho",value:220,liters:220,commonUnit:"liter"},
 ];
+
+// Common modern length units (inches-based)
+let commonLengthUnits = [
+    { name: 'Inch', abbreviation: 'in', inches: 1, commonUnit: 'inch' },
+    { name: 'Foot', abbreviation: 'ft', inches: 12, commonUnit: 'inch' },
+    { name: 'Yard', abbreviation: 'yd', inches: 36, commonUnit: 'inch' },
+    { name: 'Meter', abbreviation: 'm', inches: 39.3700787, commonUnit: 'meter' }
+];
+
+// Common modern weight units (grams-based)
+let commonWeightUnits = [
+    { name: 'Ounce', abbreviation: 'oz', grams: 28.349523125, commonUnit: 'ounce' },
+    { name: 'Pound', abbreviation: 'lb', grams: 453.59237, commonUnit: 'pound' },
+    { name: 'Kilogram', abbreviation: 'kg', grams: 1000, commonUnit: 'kilogram' }
+];
+
+// Common modern volume units (liters-based)
+let commonVolumeUnits = [
+    { name: 'Milliliter', abbreviation: 'mL', liters: 0.001, commonUnit: 'milliliter' },
+    { name: 'Liter', abbreviation: 'L', liters: 1, commonUnit: 'liter' },
+    { name: 'Cup', abbreviation: 'cup', liters: 0.2365882365, commonUnit: 'cup' },
+    { name: 'Pint', abbreviation: 'pt', liters: 0.473176473, commonUnit: 'pint' },
+    { name: 'Quart', abbreviation: 'qt', liters: 0.946352946, commonUnit: 'quart' },
+    { name: 'Gallon', abbreviation: 'gal', liters: 3.785411784, commonUnit: 'gallon' }
+];

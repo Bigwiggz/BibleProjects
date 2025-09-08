@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Local CSS-->
     <link href="./css/styles.css" rel="stylesheet">
-    <title>Hello, world!</title>
+    <title>Weights and Measures</title>
   </head>
   <body>
     <h1>Weights and Measures</h1>
@@ -34,9 +34,11 @@
                                 <!--Load option types here-->
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Convert</button>
+            <button type="button" class="btn btn-primary" id="lengthConvertButton">Convert</button>
                     </form>
                 </div>
+        <!--add a section where the length result will show-->
+        <div id="lengthResults"></div>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
@@ -64,14 +66,78 @@
                                 <!--Load option types here-->
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Convert</button>
+            <button type="button" class="btn btn-primary" id="weightConvertButton">Convert</button>
                     </form>
                 </div>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div id="weightResults"></div>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
     </div>
+    <!--Measure of  Liquid Volume-->
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header">
+                Measures of Liquid Volume
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <div>
+                    <!--Add a form with a number field and a selector to select the name of the volume type-->
+                    <form>
+                        <div class="mb-3">
+                            <label for="volumeLiquidInput" class="form-label">Enter Volume</label>
+                            <input type="number" class="form-control" id="volumeLiquidInput" aria-describedby="volumeHelp">
+                            <div id="volumeHelp" class="form-text">Enter the volume you want to convert.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="volumeLiquidSelect" class="form-label">Select Volume Type</label>
+                            <select class="form-select" id="volumeLiquidSelect" aria-label="Volume Liquid Type Selector">
+                                <!--Load option types here-->
+                            </select>
+                        </div>
+            <button type="button" class="btn btn-primary" id="volumeLiquidConvertButton">Convert</button>
+                    </form>     
+                </div>
+        <div id="volumeLiquidResults"></div>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>            
+            </div>
+        </div>
+    </div>
+    <!--Measures of Dry Volume-->
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header">
+                Measures of Dry Volume
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <div>
+                    <!--Add a form with a number field and a selector to select the name of the dry volume type-->
+                    <form>
+                        <div class="mb-3">
+                            <label for="volumeDryInput" class="form-label">Enter Dry Volume</label>
+                            <input type="number" class="form-control" id="volumeDryInput" aria-describedby="dryVolumeHelp">
+                            <div id="dryVolumeHelp" class="form-text">Enter the dry volume you want to convert.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="volumeDrySelect" class="form-label">Select Dry Volume Type</label>
+                            <select class="form-select" id="volumeDrySelect" aria-label="Dry Volume Type Selector">
+                                <!--Load option types here-->       
+                            </select>
+                        </div>
+            <button type="button" class="btn btn-primary" id="volumeDryConvertButton">Convert</button>
+                    </form>
+                </div>
+        <div id="volumeDryResults"></div>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

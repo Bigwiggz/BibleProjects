@@ -351,6 +351,75 @@ let geoJsonData=
           38.293869
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nineveh",
+        "web_link": "https://www.jw.org/en/search/?q=nineveh",
+        "period_name": "Preflood Era - 4025 BCE to 2370 BCE",
+        "object_type": "Nation",
+        "color": "#00ffff",
+        "scripture_reference": "Ge 10:9, 11, 12; Mic 5:6",
+        "description": "A city of Assyria founded by Nimrod, “a mighty hunter in opposition to Jehovah.” Together with Rehoboth-Ir, Calah, and Resen it constituted “the great city.” (Ge 10:9, 11, 12; Mic 5:6) Much later it became the capital of the Assyrian Empire. As such, Nineveh was a “city of bloodshed” (Na 3:1), for the Assyrians waged many wars of conquest and employed brutal methods in killing captured warriors. Doubtless the military campaigns contributed greatly to the city’s wealth. (Na 2:9) The principal deity of Nineveh appears to have been Ishtar, a goddess of love and war.",
+        "object_id": "ff6971b0-225f-4713-b834-bda2b9e0002d",
+        "latitude": 36.39879,
+        "longitude": 43.097305,
+        "elevation": 735
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.097305,
+          36.39879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Calah",
+        "web_link": "https://www.jw.org/en/search/?q=calah",
+        "period_name": "Preflood Era - 4025 BCE to 2370 BCE",
+        "object_type": "Nation",
+        "color": "#00ffff",
+        "scripture_reference": "Ge 10:9-12",
+        "description": "A city founded by Nimrod in Assyria and originally part of “the great city” composed of Nineveh, Calah, Resen, and Rehoboth-Ir, the latter three places apparently being suburbs of Nineveh. (Ge 10:9-12) Calah appears as Kalhu on Assyrian cuneiform texts, and during the period of the Assyrian Empire, it became one of the three principal cities of the realm, along with Nineveh and Asshur. Calah was situated at the NE angle of the junction of the Great Zab River with the Tigris, about 35 km (22 mi) SSE of Nineveh. The modern name of the site is Nimrud, thereby preserving the name of the ancient founder of the city.",
+        "object_id": "ff6981b1-225f-4713-b834-bda2b9e0002d",
+        "latitude": 36.098056,
+        "longitude": 43.328889,
+        "elevation": 735
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.328889,
+          36.098056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ur",
+        "web_link": "https://www.jw.org/en/search/?q=ur",
+        "period_name": "Preflood Era - 4025 BCE to 2370 BCE",
+        "object_type": "Other",
+        "color": "#ff00ff",
+        "scripture_reference": "Ge 10:9-12",
+        "description": "Ur of the Chaldeans,” the city in Mesopotamia where Abram’s (Abraham’s) brother Haran (and likely Abraham himself) was born. (Ge 11:28; Ac 7:2, 4) Jehovah appeared to Abraham and directed him to leave Ur. The Bible, crediting Terah with the move because he was the family head, says that Terah took his son Abraham, his daughter-in-law Sarah, and his grandson Lot, moving from Ur to Haran.​—Ge 11:31; 12:1; Ne 9:7.",
+        "object_id": "bb6981b1-225f-4713-b834-cdr2b9e0002d",
+        "latitude": 30.961653,
+        "longitude": 46.105126,
+        "elevation": 735
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.105126,
+          30.961653
+        ]
+      }
     }
   ]
 };
