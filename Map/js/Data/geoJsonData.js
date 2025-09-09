@@ -5,333 +5,6 @@ let geoJsonData=
     {
       "type": "Feature",
       "properties": {
-        "name": "Object 1",
-        "web_link": "google.com",
-        "period_name": "Preflood Era - 4025 BCE to 2370 BCE",
-        "object_type": "Battle",
-        "color": "#59ec34ff",
-        "scripture_reference": "Genesis 1:1",
-        "description": "Good",
-        "object_id": "4497a9e6-7c53-4afa-bc6e-cda29ab43cdc",
-        "latitude": 31.774235,
-        "longitude": 35.22337
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.22337,
-          31.774235
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Object 2",
-        "web_link": "google.com",
-        "period_name": "Patriarch Era - 2370 BCE to 1711 BCE",
-        "object_type": "Battle",
-        "color": "#000000",
-        "scripture_reference": "Genesis 1:1",
-        "description": "Good",
-        "object_id": "26bd9048-e61a-45ac-bc36-87cd7bbc99f6",
-        "latitude": 31.792475,
-        "longitude": 35.193672
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.193672,
-          31.792475
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Object 3",
-        "web_link": "google.com",
-        "period_name": "Early Israel - 1711 BCE to 1117 BCE",
-        "object_type": "Battle",
-        "color": "#000000",
-        "scripture_reference": "Genesis 1:1",
-        "description": "Good",
-        "object_id": "c39103b6-161f-4529-a35c-fc109e6aaac0",
-        "latitude": 31.791161,
-        "longitude": 35.27401
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.27401,
-          31.791161
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Object 4",
-        "web_link": "google.com",
-        "period_name": "Era of the Kings - 1117 BCE to 607 BCE",
-        "object_type": "Battle",
-        "color": "#000000",
-        "scripture_reference": "Genesis 1:1",
-        "description": "Good",
-        "object_id": "7d863373-d177-4d75-9fdd-28b7834720ff",
-        "latitude": 31.731028,
-        "longitude": 35.243626
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.243626,
-          31.731028
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Object 5",
-        "web_link": "google.com",
-        "period_name": "Post Kings Era - 607 BCE to 2 BCE",
-        "object_type": "Battle",
-        "color": "#000000",
-        "scripture_reference": "Genesis 1:1",
-        "description": "Good",
-        "object_id": "57bdd35e-2813-4c83-8d19-42217cace154",
-        "latitude": 31.741831,
-        "longitude": 35.142517
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.142517,
-          31.741831
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Object 6",
-        "web_link": "google.com",
-        "period_name": "Jesus Epoch- 2 BCE- to 33 CE",
-        "object_type": "Battle",
-        "color": "#e61919",
-        "scripture_reference": "Genesis 1:1",
-        "description": "Good",
-        "object_id": "09432cee-bda9-41b2-ae63-aede03d2c9d6",
-        "latitude": 31.791307,
-        "longitude": 35.143719
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.143719,
-          31.791307
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Object 7",
-        "web_link": "google.com",
-        "period_name": "Christian Congregation - 33 CE to 98 CE",
-        "object_type": "Battle",
-        "color": "#e61919",
-        "scripture_reference": "Genesis 1:1",
-        "description": "Good",
-        "object_id": "6d57642e-4b75-439a-8546-8eacd7466ca6",
-        "latitude": 31.754239,
-        "longitude": 35.27607
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.27607,
-          31.754239
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Object 8",
-        "web_link": "google.com",
-        "period_name": "Midevil Era - 98 CE to 1870 CE",
-        "object_type": "Battle",
-        "color": "#e61919",
-        "scripture_reference": "Genesis 1:1",
-        "description": "Good",
-        "object_id": "fba84bd1-d408-4eae-b8ac-40fc40e7a273",
-        "latitude": 31.715258,
-        "longitude": 35.180798
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.180798,
-          31.715258
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Object 9",
-        "web_link": "google.com",
-        "period_name": "Modern Times - 1870 CE to Present",
-        "object_type": "Battle",
-        "color": "#731212",
-        "scripture_reference": "Genesis 1:1",
-        "description": "Good",
-        "object_id": "64da7d72-ead4-475d-ba75-7ccbaf67df46",
-        "latitude": 31.827339,
-        "longitude": 35.163803
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.163803,
-          31.827339
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Object 1",
-        "web_link": "google.com",
-        "period_name": "Preflood Era - 4025 BCE to 2370 BCE",
-        "object_type": "Prophet",
-        "color": "#f51919",
-        "scripture_reference": "Genesis 1:1",
-        "description": "Good",
-        "object_id": "6c11bac7-e3ea-4cd5-8e56-aa81b668ea67",
-        "perimeter_miles": 11.812,
-        "area_sq_miles": 6.616,
-        "areaInSquareMiles": 6.616058557234689,
-        "perimeterInMiles": 11.812255836546589,
-        "geographicCenter": [
-          35.23420811800587,
-          31.804779703838
-        ]
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              35.201397,
-              31.833173
-            ],
-            [
-              35.275898,
-              31.799332
-            ],
-            [
-              35.242767,
-              31.78299
-            ],
-            [
-              35.214272,
-              31.795247
-            ],
-            [
-              35.201397,
-              31.833173
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Object 1",
-        "web_link": "google.com",
-        "period_name": "Preflood Era - 4025 BCE to 2370 BCE",
-        "object_type": "Prophet",
-        "color": "#f51919",
-        "scripture_reference": "Genesis 1:1",
-        "description": "Good",
-        "object_id": "2b9485d3-327a-4220-999b-341545a05af6",
-        "length_miles": 19.02,
-        "num_points": 8,
-        "lengthInMiles": 19.02035905734645
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            35.186977,
-            31.839153
-          ],
-          [
-            35.243797,
-            31.842507
-          ],
-          [
-            35.301647,
-            31.836236
-          ],
-          [
-            35.312634,
-            31.81465
-          ],
-          [
-            35.248775,
-            31.75891
-          ],
-          [
-            35.2038,
-            31.767375
-          ],
-          [
-            35.186119,
-            31.788827
-          ],
-          [
-            35.183887,
-            31.799332
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Object 1",
-        "web_link": "google.com",
-        "period_name": "Preflood Era - 4025 BCE to 2370 BCE",
-        "object_type": "Prophet",
-        "color": "#f51919",
-        "scripture_reference": "j",
-        "description": "j",
-        "object_id": "0453df4c-977b-4622-b025-cd80a0176445",
-        "length_miles": 0.936,
-        "num_points": 2
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            35.191269,
-            31.826464
-          ],
-          [
-            35.204487,
-            31.81888
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Garden of Eden(?)",
         "web_link": "https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Eden/",
         "period_name": "Preflood Era - 4025 BCE to 2370 BCE",
@@ -418,6 +91,121 @@ let geoJsonData=
         "coordinates": [
           46.105126,
           30.961653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Babylon",
+        "web_link": "https://www.jw.org/en/search/?q=babylon",
+        "period_name": "Post Kings Era - 607 BCE to 2 BCE",
+        "object_type": "Nation",
+        "color": "#00ffff",
+        "scripture_reference": "Isa 44:27; 45:1, 2; Jer 50:38; 51:30-32",
+        "description": "The later name given to Babel. The city lay on both sides of the Euphrates River. A double system of walls surrounded Babylon, making it seemingly impregnable.  This sprawling metropolis astride the watercourse of the Euphrates was a commercial and industrial center of world trade.   In such glory it continued as the capital of the third world power until the night of October 5, 539 B.C.E. (Gregorian calendar), when Babylon fell before the invading Medo-Persian armies under the command of Cyrus the Great.  It represents the world empire of false religion.",
+        "object_id": "6f02721a-3aa1-43de-97cf-86f81860c73f",
+        "latitude": 32.542268,
+        "longitude": 44.421118,
+        "elevation": 125
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.421118,
+          32.542268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Haran",
+        "web_link": "https://www.jw.org/en/search/?q=haran",
+        "period_name": "Preflood Era - 4025 BCE to 2370 BCE",
+        "object_type": "Other",
+        "color": "#ff00ff",
+        "scripture_reference": "Isa 44:27; 45:1, 2; Jer 50:38; 51:30-32",
+        "description": "A city of northern Mesopotamia in which Abram (Abraham) resided temporarily; here Terah his father died. (Ge 11:31, 32; 12:4, 5; Ac 7:2-4) The name Haran also seems to have embraced the surrounding area, for Haran is listed among “the nations” conquered by the kings of Assyria.​",
+        "object_id": "cc75a864-aa14-43d8-a5a7-147ac7dfb335",
+        "latitude": 36.864628,
+        "longitude": 39.03127,
+        "elevation": 1214
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.03127,
+          36.864628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shechem",
+        "web_link": "https://www.jw.org/en/search/?q=shechem",
+        "period_name": "Preflood Era - 4025 BCE to 2370 BCE",
+        "object_type": "Servant",
+        "color": "#ffff00",
+        "scripture_reference": "Ge 12:6-9; Ps 60:6; 108:7; Jg 21:19; ",
+        "description": "An ancient city linked with Nablus or, more precisely, with nearby Tell Balata. (Ps 60:6; 108:7; PICTURE, Vol. 1, p. 530) Situated at the E end of the narrow valley running between Mount Gerizim and Mount Ebal, Tell Balata lies about 48 km (30 mi) N of Jerusalem. A good supply of water is available, and just E of the site there is a fertile plain. Anciently Shechem commanded the E-W and N-S roads traversing central Palestine. (Compare Jg 21:19.) Lacking the military advantage of being built on a mountain, the city depended on its fortifications for security.​",
+        "object_id": "d3a10e8e-dcde-4e1c-bae8-901d71e01516",
+        "latitude": 32.215063,
+        "longitude": 35.278344,
+        "elevation": 1903
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.278344,
+          32.215063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ai",
+        "web_link": "https://www.jw.org/en/search/?q=ai",
+        "period_name": "Early Israel - 1711 BCE to 1117 BCE",
+        "object_type": "Servant",
+        "color": "#ffff00",
+        "scripture_reference": "Ge 12:8,9; Jos 7:2; 8:11, 12; Isa 10:28; Ge 13:3",
+        "description": "A royal city of the Canaanites, the second city taken during the Israelite invasion. Ai was situated “close by Beth-aven, to the east of Bethel,” with a valley plain to the N. (Jos 7:2; 8:11, 12) Michmash apparently lay to the S.​—Isa 10:28.  Shortly after arrival in Canaan, Abraham had pitched his tent “with Bethel on the west and Ai on the east.” He built an altar there and revisited the place after his sojourn in Egypt.​—Ge 12:8; 13:3.  In 1473 B.C.E., following the victory over Jericho, Ai was attacked by a small force of about 3,000 Israelite soldiers, since the spies said of the inhabitants of Ai, “They are few.” (Jos 7:2, 3) However, because of Achan’s sin Israel suffered defeat.",
+        "object_id": "808ad7b2-07ef-473b-905b-3fc2fc85c170",
+        "latitude": 31.917431,
+        "longitude": 35.261135,
+        "elevation": 2726
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.261135,
+          31.917431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bethel",
+        "web_link": "https://www.jw.org/en/search/?q=bethel",
+        "period_name": "Patriarch Era - 2370 BCE to 1711 BCE",
+        "object_type": "Servant",
+        "color": "#ffff00",
+        "scripture_reference": "Ge 12:8; Ge 13:8-11; Ge 28:10-19",
+        "description": "A prominent city of Israel, more frequently mentioned in the Bible than any other except Jerusalem. It is identified with the ruins by the modern village of Beitin, about 17 km (11 mi) N of Jerusalem. It thus lay on a rocky ridge in the extreme southern part of the mountainous region of Ephraim at about 900 m (3,000 ft) above sea level. The surrounding area today is quite barren, consisting of a stony plateau with sparse vegetation. Yet the existence of several springs there shows that the ancient city had an excellent water supply.  Bethel’s position was strategic and contributed greatly to its importance. Situated on the backbone of the central mountain range, it was on the important N-S route that followed the watershed line, running all the way from Shechem southward through Bethel, Jerusalem, Bethlehem, Hebron, and down to Beer-sheba.",
+        "object_id": "9f4d9219-ca4e-49e5-a946-40c304a44346",
+        "latitude": 31.942072,
+        "longitude": 35.223273,
+        "elevation": 2841
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.223273,
+          31.942072
         ]
       }
     }

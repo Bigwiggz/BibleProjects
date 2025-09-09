@@ -7,6 +7,25 @@ Leaflet Javascript File
 ///////////////////////////////////////////
 let map = L.map('map').setView([31.776121, 35.228164], 13);
 
+// Inject minimal label styling for permanent feature labels (if not already present)
+if (!document.getElementById('map-feature-label-style')) {
+    const style = document.createElement('style');
+    style.id = 'map-feature-label-style';
+    style.innerHTML = `
+        .map-feature-label {
+            background: rgba(255,255,255,0.88);
+            color: #0b2a4a;
+            padding: 2px 6px;
+            border-radius: 4px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.12);
+            font-weight: 600;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+    `;
+    document.head.appendChild(style);
+}
+
 ///////////////////////////////////////////
 //Create Global Variables
 ///////////////////////////////////////////
@@ -96,8 +115,18 @@ Object.entries(groupedFeatures).forEach(([key, features]) => {
       const snippet = props.description ? `<p>${props.description}</p>` : '';
       const popupContent = `<strong>${snakeToTitleCase('name') === 'Name' && props.name ? props.name : title}</strong>${snippet}`;
 
-      // Bind a Leaflet popup (will be opened/closed in mouse events)
-      layer.bindPopup(popupContent, {autoClose: true, closeOnClick: false});
+            // Bind a Leaflet popup (will be opened/closed in mouse events)
+            layer.bindPopup(popupContent, {autoClose: true, closeOnClick: false});
+
+            // Add a permanent label showing the feature name (if present)
+            if (props && props.name) {
+                try {
+                    layer.bindTooltip(props.name, {permanent: true, direction: 'right', className: 'map-feature-label', offset: [8, 0]});
+                } catch (e) {
+                    // Some layer types may not support bindTooltip in older Leaflet versions; ignore failures
+                    console.warn('Could not bind tooltip for feature', props.name, e);
+                }
+            }
 
       // show detail card on click (uses your existing function)
       layer.on('click', function(e) {
