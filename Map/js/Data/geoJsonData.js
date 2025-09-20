@@ -1375,6 +1375,75 @@ let geoJsonData=
           33.248413
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beer-lahai-roi",
+        "web_link": "https://www.jw.org/en/search/?q=Beer-lahai-roi",
+        "period_name": "Patriarch Era - 2370 BCE to 1711 BCE",
+        "object_type": "Servant",
+        "color": "#ffff00",
+        "scripture_reference": "Gen 16:14, Gen 24:62, Gen 25:11",
+        "description": "Hagar, Sarai’s Egyptian maidservant, when fleeing from her mistress’ wrath followed “the way to Shur,” leading through the Negeb down to Egypt. Reaching a certain fountain (Heb., ʽaʹyin), however, she was reassured by an angel, instructed to return to her mistress, and told of the birth and future of Ishmael (whose name means “God Hears (Listens)”). Therefore, the well there was called “Beer-lahai-roi,” Hagar saying of Jehovah, “You are a God of sight.”​—Ge 16:7-14.  Later, Isaac was coming from “the way that goes to Beer-lahai-roi” in the Negeb when he caught sight of the camel caravan bringing his future bride, Rebekah. (Ge 24:62, 63) Following Abraham’s death, Isaac resided “close by Beer-lahai-roi.”​—Ge 25:11.",
+        "object_id": "c27dc887-a3c5-42df-aa75-469e6da289e5",
+        "latitude": 30.68718,
+        "longitude": 34.495533,
+        "elevation": 1575
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.495533,
+          30.68718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beer-Sheba",
+        "web_link": "https://www.jw.org/en/search/?q=Beer-Sheba",
+        "period_name": "Patriarch Era - 2370 BCE to 1711 BCE",
+        "object_type": "Servant",
+        "color": "#ffff00",
+        "scripture_reference": " Gen 21:14;  Gen 21:31;  Gen 21:32;  Gen 21:33;  Gen 22:19;  Gen 26:23;  Gen 26:33;  Gen 28:10;  Gen 46:1;  Gen 46:5;  Josh 15:28;  Josh 19:2;  Judg 20:1;  1 Sam 3:20;  1 Sam 8:2;  2 Sam 3:10;  2 Sam 17:11;  2 Sam 24:2;  2 Sam 24:7;  2 Sam 24:15;  1 Kgs 4:25;  1 Kgs 19:3;  2 Kgs 12:1;  2 Kgs 23:8;  1 Chr 4:28;  1 Chr 21:2;  2 Chr 19:4;  2 Chr 24:1;  2 Chr 30:5;  Neh 11:27;  Neh 11:30;  Amos 5:5;",
+        "description": "The place of a well and, later, of a city in southern Judah. It lies about midway between the Mediterranean Coast and the southern end of the Dead Sea, about 45 km (28 mi) SW of Hebron, and about the same distance SE of Gaza. Beer-sheba came to stand for the southernmost point in describing the length of the Promised Land, as expressed in the proverbial phrase “from Dan down to Beer-sheba” (Jg 20:1), Here Samuel’s sons officiated as judges. (1Sa 8:1, 2) Elijah, fleeing from Queen Jezebel’s wrath, left his attendant at Beer-sheba and headed southward across the Negeb toward Horeb. (1Ki 19:3) Zibiah, the mother of King Jehoash of Judah, came from this place. (2Ki 12:1) Beer-sheba was named as the terminating point of David’s registering of the people throughout Israel (2Sa 24:2, 7) and the starting place of Jehoshaphat’s reforms in worship. (2Ch 19:4) The references of Amos to Beer-sheba in his day strongly suggest that it was then a place of unclean religious activities (Am 5:5; 8:14).",
+        "object_id": "30c0da30-3d39-40f5-bfd8-1eb15cab5efa",
+        "latitude": 31.245326,
+        "longitude": 34.84113,
+        "elevation": 988
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.84113,
+          31.245326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mt. Sinai (Horeb)",
+        "web_link": "https://www.jw.org/en/search/?q=Sinai",
+        "period_name": "Patriarch Era - 2370 BCE to 1711 BCE",
+        "object_type": "Prophet",
+        "color": "#0000ff",
+        "scripture_reference": "Gen 16:14, Gen 24:62, Gen 25:11",
+        "description": "A mountain in Arabia (Ga 4:25), apparently also called Horeb. (Compare Ex 3:1, 12; 19:1, 2, 10, 11; see HOREB.) In the vicinity of Mount Sinai the Israelites and a vast mixed company, with numerous flocks and herds, encamped for nearly a year. (Ex 12:37, 38; 19:1; Nu 10:11, 12), Near Mount Sinai, or Horeb, Jehovah’s angel appeared to Moses in the burning thornbush and commissioned him to lead the enslaved Israelites out of Egypt. (Ex 3:1-10; Ac 7:30),   Moses was then directed to tell the people that their strict obedience to Jehovah’s word and covenant would result in their becoming a kingdom of priests and a holy nation. (Ex 19:5, 6).",
+        "object_id": "011dbeff-8a39-4d65-a069-ae70a60d911c",
+        "latitude": 28.539238,
+        "longitude": 33.973732,
+        "elevation": 7300
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.973732,
+          28.539238
+        ]
+      }
     }
   ]
 };
