@@ -55,13 +55,15 @@ function runCalculateMonetaryValue(){
     let silverPricePerPound=25; // Example static value for silver price per pound in USD
     let copperPricePerPound=4; // Example static value for copper price per pound in USD
     
-    let prices=fetchMetalPrices();
-    
-    if(prices){
-        goldPricePerPound=prices.goldPerPound;
-        silverPricePerPound=prices.silverPerPound;
-        copperPricePerPound=prices.copperPerPound;
-    }
+    fetchMetalPrices().then(prices => {
+        goldPricePerPound = prices.gold;
+        silverPricePerPound = prices.silver;
+        copperPricePerPound = prices.copper;
+        calculateMoneyValue(goldPricePerPound, silverPricePerPound);
+    }).catch(error => {
+        console.error("Error fetching metal prices:", error);
+        calculateMoneyValue(goldPricePerPound, silverPricePerPound); // Use default values in case of error
+    });
     calculateMoneyValue(goldPricePerPound, silverPricePerPound);
 };
 
